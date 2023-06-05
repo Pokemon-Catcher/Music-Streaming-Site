@@ -1,0 +1,55 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+MYM | Главная
+{%endblock%}
+
+{%block content%}
+<div class="container">
+<div class="row justify-content-around">
+    <div class="col-lg-6 col-xs-10 justify-content-center">
+        <h2>Топ</h2>
+    </div>
+    <div class="col-lg-6 col-xs-10 justify-content-center">
+        <h2>Рекомендации</h2>
+    </div>
+</div>
+<div class="row justify-content-around">
+    <div class="col-lg-6 col-xs-10 justify-content-center">
+        <h2>Новое</h2>
+        <div class="container">
+            <div class="row justify-content-around bg-darkest align-items-center">
+                <div class="col-3 p-2">
+                    <img src="/static/images/album.avif" class="w-75">
+                </div>
+                <div class="col-8">
+                    <div class="row justify-content-left align-items-center">
+                            <div class="col-8">
+                                <span>
+                                    <h7>Sloth</h7>
+                                    <h6>JungleCore</h6>
+                                </span>
+                            </div>
+                        <div class="col-1">
+                            <img class="h-75" src="/static/images/play.svg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 progress">
+                            <audio controls>
+                                <source src="/static/audio/slothcore.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xs-10 justify-content-center">
+        <h2>Случайное</h2>
+    </div>
+
+</div>
+</div>
+{%endblock%}

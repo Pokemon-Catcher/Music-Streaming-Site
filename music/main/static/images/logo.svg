@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58337 264.58337"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#1e1b19"
+     bordercolor="#000000"
+     borderopacity="0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     showguides="false"
+     inkscape:lockguides="false"
+     inkscape:zoom="0.36063372"
+     inkscape:cx="1113.318"
+     inkscape:cy="497.73494"
+     inkscape:window-width="1424"
+     inkscape:window-height="822"
+     inkscape:window-x="-9"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid736"
+       spacingx="26.458345"
+       spacingy="26.458337"
+       empspacing="5"
+       snapvisiblegridlinesonly="true"
+       dotted="false"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Diamond"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 7.2124892 7.2124892"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="Diamond1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8728"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="3"
+       markerHeight="3"
+       viewBox="0 0 7.2124892 7.2124892"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="strokeWidth">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path8726" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="display:inline;opacity:1;mix-blend-mode:normal;fill:#ff7f2a;fill-opacity:1;stroke:#ffffff;stroke-width:9.44898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:9.44898, 9.44898, 9.44898, 9.44898;stroke-dashoffset:0;marker-mid:url(#marker8728);marker-end:url(#Diamond);paint-order:stroke fill markers"
+       id="path815"
+       cy="133.05173"
+       cx="-131.53139"
+       transform="matrix(0.00574181,-0.99998352,0.99998369,0.00571132,0,0)"
+       rx="96.44133"
+       ry="96.445724" />
+    <path
+       id="text17891"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.342px;font-family:Gulim;-inkscape-font-specification:Gulim;display:inline;fill:#fffbfb;fill-opacity:1;stroke:none;stroke-width:7.54736;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 77.434334,71.555233 c -1.650885,0 -3.048042,0.420564 -4.190963,1.261789 -1.269911,0.946378 -1.904794,2.208068 -1.904794,3.785366 v 2.697555 105.978367 2.69755 c 0,1.5773 0.571704,2.83899 1.714625,3.78537 1.14292,0.84123 2.53956,1.26179 4.190446,1.26179 0.638381,0 1.241286,-0.0785 1.812811,-0.22616 0.218468,0.0217 0.437613,0.0427 0.663526,0.0531 2.28584,0.2103 4.444754,-0.15792 6.476611,-1.1043 2.031859,-1.15668 3.428499,-2.73425 4.190447,-4.73215 l 3.81011,-9.30594 12.942887,-31.13267 16.58246,40.61258 c 2.03186,3.89067 4.82565,5.83554 8.38141,5.83554 3.68274,0 6.54023,-1.94487 8.57209,-5.83554 l 16.59486,-40.64371 12.73981,30.8479 4.19096,10.09523 c 0.76196,1.78761 2.15859,3.20723 4.19045,4.25876 1.90486,0.94638 4.06378,1.36694 6.47661,1.26179 0.29826,-0.026 0.58969,-0.0605 0.87436,-0.10255 0.44876,0.0754 0.91753,0.11812 1.41181,0.11812 1.65088,0 3.04753,-0.42056 4.19045,-1.26179 1.26991,-0.94638 1.90478,-2.20807 1.90478,-3.78537 V 185.27831 79.299944 76.602389 c 0,-1.577298 -0.57118,-2.838988 -1.7141,-3.785367 -1.14292,-0.841225 -2.54008,-1.261789 -4.19096,-1.261789 -0.63799,0 -1.24057,0.07872 -1.81178,0.226169 -0.2188,-0.02174 -0.4383,-0.0427 -0.66456,-0.05311 -2.28584,-0.210307 -4.44476,0.157916 -6.47661,1.104295 -2.03186,1.156684 -3.42849,2.734255 -4.19045,4.732165 l -3.81011,9.305924 -12.94289,31.133594 -16.58246,-40.612579 c -2.03186,-3.890668 -4.82566,-5.83646 -8.38141,-5.83646 -3.68274,0 -6.53972,1.945792 -8.57158,5.83646 L 107.31833,118.03448 94.578003,87.186582 90.387043,77.091354 c -0.761948,-1.787604 -2.158588,-3.207234 -4.190447,-4.258765 -1.904866,-0.946379 -4.06378,-1.366943 -6.476611,-1.26179 -0.298258,0.026 -0.589692,0.06049 -0.874367,0.102555 -0.448745,-0.07541 -0.917003,-0.118121 -1.411284,-0.118121 z m 54.860256,14.51149 19.15234,46.374867 -19.15234,46.06994 -19.15233,-46.37486 z m 48.95468,1.750758 v 88.476299 l -18.063,-44.23769 z m -97.909865,0.466988 18.063005,44.238611 -18.063005,44.2377 z"
+       sodipodi:insensitive="true" />
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+.bg-black {
+    background-color:#000000
+}
+
+body{
+    background-color:#000000
+}
+
+.bg-darkest{
+    background-color:#181818
+}
+
+.bg-darker{
+    background-color:#333333;
+}
+
+h1 h6 .bg-primary{
+    color:#FF7F2A
+}
+h2 h7{
+    color:#DBA507
+}
+h3{
+    color:#8EC7D2
+}
+h4{
+    color:#0D6986
+}
+h5{
+    color:#07485B
+}
