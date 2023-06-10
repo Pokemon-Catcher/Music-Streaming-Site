@@ -27,12 +27,12 @@
      showguides="false"
      inkscape:lockguides="false"
      inkscape:zoom="0.36063372"
-     inkscape:cx="1113.318"
-     inkscape:cy="497.73494"
+     inkscape:cx="1042.6091"
+     inkscape:cy="500.50783"
      inkscape:window-width="1424"
      inkscape:window-height="822"
-     inkscape:window-x="-9"
-     inkscape:window-y="20"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -47,53 +47,13 @@
        originy="0" />
   </sodipodi:namedview>
   <defs
-     id="defs2">
-    <marker
-       style="overflow:visible"
-       id="Diamond"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Diamond"
-       markerWidth="3"
-       markerHeight="3"
-       viewBox="0 0 7.2124892 7.2124892"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.45)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
-         id="Diamond1" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker8728"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Diamond"
-       markerWidth="3"
-       markerHeight="3"
-       viewBox="0 0 7.2124892 7.2124892"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid"
-       markerUnits="strokeWidth">
-      <path
-         transform="scale(0.45)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
-         id="path8726" />
-    </marker>
-  </defs>
+     id="defs2" />
   <g
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="display:inline;opacity:1;mix-blend-mode:normal;fill:#ff7f2a;fill-opacity:1;stroke:#ffffff;stroke-width:9.44898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:9.44898, 9.44898, 9.44898, 9.44898;stroke-dashoffset:0;marker-mid:url(#marker8728);marker-end:url(#Diamond);paint-order:stroke fill markers"
+       style="display:inline;opacity:1;mix-blend-mode:normal;fill:#ff7f2a;fill-opacity:1;stroke:#ffffff;stroke-width:21.1666696;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke fill markers"
        id="path815"
        cy="133.05173"
        cx="-131.53139"

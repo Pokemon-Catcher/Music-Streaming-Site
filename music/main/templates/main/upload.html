@@ -1,0 +1,39 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+MYM | Загрузка
+{%endblock%}
+
+{%block content%}
+<div class="container">
+  <div class="row w-100">
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          {% csrf_token %}
+          {%for field in form%}
+<!--           <label for="title">Название</label>
+          <input class="form-control" name="title" id="title" placeholder="Введите название">
+
+          <label for="artist">Исполнитель</label>
+          <input class="form-control" name="artist" id="artist" placeholder="Введите исполнителя">
+
+          <label for="release_date">Дата релиза</label>
+          <input type="date" class="form-control" name="release_date" id="release_date" placeholder="Введите дату">
+
+          <label for="audio">Аудио</label>
+          <input type="file" class="form-control-file" name="audio" id="audio" accept="audio/*">
+
+          <label for="cover">Обложка</label>
+          <input type="file" class="form-control-file" name="cover" id="cover" accept="image/*">
+
+          <label for="artist">Теги</label>
+          <input class="form-control" name="tags" id="tags" placeholder="Введите название"> -->
+            {{ field.label_tag }}
+            {{field}}
+          {%endfor%}
+          <input type="submit" value="Сохранить">
+        </div>
+    </form>
+  </div>
+</div>
+{%endblock%}

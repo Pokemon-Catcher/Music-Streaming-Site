@@ -14,10 +14,11 @@ body{
     background-color:#333333;
 }
 
-h1 h6 .bg-primary{
-    color:#FF7F2A
+h1,h5,.bg-primary{
+    color:#FF7F2A;
+    font-weight: bold;
 }
-h2 h7{
+h2,h6{
     color:#DBA507
 }
 h3{
@@ -26,6 +27,6 @@ h3{
 h4{
     color:#0D6986
 }
-h5{
+.h5 {
     color:#07485B
 }
