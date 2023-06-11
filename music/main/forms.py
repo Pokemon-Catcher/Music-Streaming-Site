@@ -1,5 +1,5 @@
 from django import forms
-from . import models
+from django.contrib.auth.models import User
 
 class UploadForm(forms.Form):
     title = forms.CharField(label="Название", max_length=64,widget=forms.TextInput(attrs={"class":"form-control"}))

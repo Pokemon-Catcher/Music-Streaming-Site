@@ -1,0 +1,35 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+MYM | Поиск
+{%endblock%}
+
+{%block content%}
+<div class="container">
+    {% for song in songs %}
+        <div class="row m-2 p-2 justify-content-left bg-darkest align-items-center h-10">
+            <div class="col-3 p-1">
+                <img src="/media/{{song.cover}}" class="w-75">
+            </div>
+            <div class="col-9">
+                <div class="row justify-content-left align-items-center">
+                        <div class="col-12">
+                            <span>
+                                <h6>
+                                    {{song.authors}}
+                                </h6>
+                                <h5>{{song.title}}</h5>
+                            </span>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <audio controls>
+                            <source src="/media/{{song.audio}}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{%endblock%}

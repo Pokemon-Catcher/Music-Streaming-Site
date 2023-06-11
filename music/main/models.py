@@ -42,6 +42,9 @@ class Song(models.Model):
         return self.title
     def likes_count(self):
         return self.likes.count()
+    def get_tags(self):
+        a=[i.tag for i in self.tags.all()]
+        return ', '.join(a)
     def authors(self):
         a=[i.artist.name for i in self.role.filter(type__title='Author')[:3]]
         if len(a)==0:
@@ -53,6 +56,8 @@ class Album(models.Model):
     release_date = models.DateField('Дата выпуска')
     cover = models.ImageField('Обложка',upload_to='albums_covers', blank=True)
     songs = models.ManyToManyField(Song, blank=True)
+    tags = models.ManyToManyField(Tag,default=None, blank=True)
+    likes = models.ManyToManyField(Like,default=None, blank=True)
     def __str__(self):
         return self.title
 
@@ -61,6 +66,8 @@ class Playlist(models.Model):
     songs = models.ManyToManyField(Song, blank=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     create_date = models.DateField('Дата создания',default=datetime.now)
+    tags = models.ManyToManyField(Tag,default=None, blank=True)
+    likes = models.ManyToManyField(Like,default=None, blank=True)
     def __str__(self):
         return self.title
 

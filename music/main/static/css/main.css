@@ -30,3 +30,11 @@ h4{
 .h5 {
     color:#07485B
 }
+
+body {
+    color: #b8b8b8;
+  }
+
+.h-10 {
+    height: 10;
+}

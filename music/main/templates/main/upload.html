@@ -9,9 +9,7 @@ MYM | Загрузка
   <div class="row w-100">
     <form action="" method="post" enctype="multipart/form-data">
         <div class="form-group">
-          {% csrf_token %}
-          {%for field in form%}
-<!--           <label for="title">Название</label>
+          <!--           <label for="title">Название</label>
           <input class="form-control" name="title" id="title" placeholder="Введите название">
 
           <label for="artist">Исполнитель</label>
@@ -28,6 +26,9 @@ MYM | Загрузка
 
           <label for="artist">Теги</label>
           <input class="form-control" name="tags" id="tags" placeholder="Введите название"> -->
+          {% csrf_token %}
+          {%for field in form%}
+
             {{ field.label_tag }}
             {{field}}
           {%endfor%}
