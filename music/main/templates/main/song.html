@@ -8,36 +8,46 @@ MYM | {{song.role.artist}} - {{song.title}}
 <div class="container h-100">
         <div class="row m-2 p-2 justify-content-left bg-darkest align-items-center h-100">
             <div class="col-3 p-1">
-                <img src="/media/{{song.cover}}" class="w-75">
+                <img seed={{song.id}} src="/media/{{song.cover}}" class="w-75">
             </div>
             <div class="col-9">
                 <div class="row justify-content-left align-items-center">
-                        <div class="col-10">
+                        <div class="col-6">
                             <span>
                                 <h6>
-                                    {{song.authors}}
+                                    {%for role in song.authors%}
+                                        <a href={% url "artist" id=role.artist.id%}>{{role.artist.name}}</a>
+                                    {%endfor%}
                                 </h6>
                                 <h5>{{song.title}}</h5>
                             </span>
                         </div>
+                        <div class="col-4">
+                            {{form.playlist}}
+                            <button id="like" type="button" onclick="addToPlaylist()" class="btn btn-primary">Добавить в плейлист</button>
+                        </div>
                         <div class="col-2">
-                            <span>
-                                <h6>
-                                    👍{{song.likes_count}}
-                                </h6>
-                            </span>
+                            <p>👁️{{song.views_count}}</p>
+                            <p>🎧{{song.listenings_count}}</p>
+                            {%if user.is_authenticated%} 
+                            <button id="like" type="button" onclick="like({{song.id}},'song')" class="btn {%if is_liked%}btn-success{%else%}btn-primary{%endif%}">👍{{song.likes_count}}</button>
+                            {%else%}
+                            <p>👍{{song.likes_count}}</p>
+                            {%endif%}
                         </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <audio controls>
+                        <audio controls onplay="listen({{song.id}})" >
                             <source src="/media/{{song.audio}}" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        {{song.get_tags}}
+                        {%for tag in song.tags.all%}
+                            <a href="/search?query={{tag.tag}}"><button id="tag" type="button" class="m-1 btn btn btn-secondary">#{{tag.tag}}</button></a>
+                        {%endfor%}
                     </div>
                 </div>
             </div>

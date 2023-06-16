@@ -1,0 +1,33 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+MYM | {{artist.name}}
+{%endblock%}
+
+{%block content%}
+<div class="container">
+        <div class="row m-2 p-2 justify-content-left bg-darkest align-items-center">
+            <div class="col-3">
+                <img src="/media/{{artist.photo}}" class="w-75">
+            </div>
+            <div class="col-9">
+                <div class="row justify-content-center align-items-center">
+                        <div class="col-12">
+                            <span>
+                                <h1>{{artist.name}}</h1>
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-6 col-xs-10 justify-content-center">
+                <h2>Альбомы</h2>
+            </div>
+            <div class="col-lg-6 col-xs-10 justify-content-center">
+                <h2>Треки</h2>
+                {%include "main/songTile.html" with songs=songs%}
+            </div>
+        </div>
+</div>
+{%endblock%}

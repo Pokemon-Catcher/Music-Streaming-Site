@@ -1,0 +1,50 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+MYM | Профиль
+{%endblock%}
+
+{%block content%}
+<div class="container">
+        <div class="row m-2 p-2 justify-content-left bg-darkest align-items-center">
+            <div class="col-3">
+                <img seed={{user.id}} src="/media/{{profile.avatar}}" class="w-75">
+            </div>
+            <div class="col-9">
+                <div class="row justify-content-center align-items-center">
+                        <div class="col-12">
+                            <span>
+                                <h1>{{user.username}}</h1>
+                                <form action={% url 'update_profile' %} method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                      {% csrf_token %}
+                                      {%for field in form%}
+                                        {{ field.label_tag }}
+                                        {{field}}
+                                      {%endfor%}
+                                      <input type="submit" value="Сохранить">
+                                    </div>
+                                </form>
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-6 col-xs-10 justify-content-center">
+                <h2>История</h2>
+                {%include "main/songTile.html" with songs=history_songs%}
+            </div>
+            <div class="col-lg-6 col-xs-10 justify-content-center">
+                <h2>Вам понравилось</h2>
+                {%include "main/songTile.html" with songs=liked_songs%}
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-6 col-xs-10 justify-content-center">
+                <h2>Ваши загрузки</h2>
+                {%include "main/songTile.html" with songs=uploaded_songs%}
+            </div>
+        </div>
+</div>
+{%endblock%}

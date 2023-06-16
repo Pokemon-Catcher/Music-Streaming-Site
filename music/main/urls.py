@@ -10,4 +10,9 @@ urlpatterns = [
     path('profile',views.profile,name="profile"),
     path('register',views.register,name="register"),
     path('logout',views.log_out,name="logout"),
+    path('like',views.like,name="like"),
+    path('listen',views.listening,name="listen"),
+    path('update_profile',views.update_profile,name="update_profile"),
+    path('artist/<int:id>',views.artist, name="artist"),
+    path('playlist/<int:id>',views.playlist, name="playlist"),
 ]

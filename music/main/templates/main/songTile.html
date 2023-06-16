@@ -2,14 +2,16 @@
     {% for song in songs %}
         <div class="row m-2 p-2 justify-content-left bg-darkest align-items-center">
             <div class="col-3 p-1">
-                <img src="/media/{{song.cover}}" class="w-75">
+                <img seed={{song.id}} src="/media/{{song.cover}}" class="w-75">
             </div>
             <div class="col-9">
                 <div class="row justify-content-left align-items-center">
                         <div class="col-12">
                             <span>
                                 <h6>
-                                    {{song.authors}}
+                                    {%for role in song.authors%}
+                                        <a href={% url "artist" id=role.artist.id%}>{{role.artist.name}}</a>
+                                    {%endfor%}
                                 </h6>
                                 <a href={% url "song" id=song.id %}><h5>{{song.title}}</h5></a>
                             </span>
@@ -17,8 +19,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <audio controls>
-                            <source src="/media/{{song.audio}}" type="audio/mpeg">
+                        <audio preload="none" onplay="listen({{song.id}})" controls>
+                            <source  src="/media/{{song.audio}}" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>

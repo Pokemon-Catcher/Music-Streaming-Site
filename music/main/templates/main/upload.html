@@ -7,6 +7,7 @@ MYM | Загрузка
 {%block content%}
 <div class="container">
   <div class="row w-100">
+    {% if user.is_authenticated %}
     <form action="" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <!--           <label for="title">Название</label>
@@ -35,6 +36,11 @@ MYM | Загрузка
           <input type="submit" value="Сохранить">
         </div>
     </form>
+    {% else %}
+    <div class="alert alert-warning" role="alert">
+      Необходимо <a href={% url 'login'%}> авторизоваться </a>
+    </div>
+    {% endif %}
   </div>
 </div>
 {%endblock%}

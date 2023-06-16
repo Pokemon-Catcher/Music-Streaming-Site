@@ -38,3 +38,7 @@ body {
 .h-10 {
     height: 10;
 }
+
+/* img[src*=noimage]{
+    filter:hue-rotate(mod(calc(attr(seed) * 1103515245 + 12345), 360))
+} */
